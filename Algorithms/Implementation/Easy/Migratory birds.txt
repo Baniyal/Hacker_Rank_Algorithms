@@ -1,0 +1,10 @@
+ar_count = int(input())
+ar = list(map(int, input().rstrip().split()))
+
+
+# set function converts the elements into the set (unique elements)
+# ar.count checks the count of each value in the set
+# calling max function iterates through all the values in the list
+
+
+print(max(set(ar), key=ar.count))

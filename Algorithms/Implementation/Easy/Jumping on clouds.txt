@@ -1,0 +1,6 @@
+def min_jumps(n, array):
+    jumps, i = 0, 0
+    while i + 2 < n:
+        i += 1 + int(array[i + 2] == 0)
+        jumps += 1
+    return jumps + int(i != n - 1)

@@ -1,0 +1,16 @@
+nk = input().split()
+n = int(nk[0])
+k = int(nk[1])
+prices = list(map(int, input().rstrip().split()))
+prices.sort()
+summ = 0
+rich = [ ]
+
+for each in prices :
+    if(each+summ <= k ):
+        summ += each
+        rich.append(each)
+    else:
+        break
+print(len(rich))
+    

@@ -1,0 +1,5 @@
+    arr = list(map(int, input().rstrip().split())) 
+    arr.sort()
+    x = sum(arr[0:4])
+    y = sum(arr[1:])
+    print(x,y)

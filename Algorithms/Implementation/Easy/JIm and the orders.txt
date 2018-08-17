@@ -1,0 +1,18 @@
+n = int(input())
+order_no = [ ]
+
+for _ in range(n):
+    order_no.append(list(map(int, input().rstrip().split())))
+
+prep = [ ]
+
+for each in order_no:
+    prep.append(sum(each))
+
+out = [ ]
+for x in range(n):
+    out.append((prep.index(min(prep))) + 1) 
+    prep[prep.index(min(prep))] = 1000000000000000000
+    
+print(" ".join(str(e) for e in out))
+    

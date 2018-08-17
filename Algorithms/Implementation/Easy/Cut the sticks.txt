@@ -1,0 +1,10 @@
+n = int(input().strip())
+arr = [int(arr_temp) for arr_temp in input().strip().split(' ')]
+#checks for the minimum element then removes it and hence modifying the array
+while len(arr)!=0:
+    #as initially all of the elements will be changed
+    print(len(arr))
+    #modify the list again by only placing all those elements into the list 
+    #which arrent equal to the minimum of the array
+    arr = [x for x in arr if x != min(arr)]
+        

@@ -1,0 +1,15 @@
+t = int(input())
+for t_itr in range(t):
+    n = int(input())
+    # converting a number first into strings and then converting that string into indivisual 
+   #  digits as integer type is not iterable in a list
+    z = [int(d) for d in str(n)]
+
+    x = 0
+    for each in z :
+        if each == 0 :
+            continue
+        elif n % each == 0 :
+            x+=1
+    print(x)
+             

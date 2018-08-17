@@ -1,0 +1,17 @@
+def simpleArraySum(ar):
+    return sum(ar)
+
+
+#count the number of the elements in the array
+ar_count = int(input())
+#although in this code ar_count is redundant
+
+#list of numbers which are seperated by whitespaces
+ar = list(map(int, input().rstrip().split()))
+
+print(ar)
+
+
+#result = simpleArraySum(ar)
+
+#print(str(result) + '\n')

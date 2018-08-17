@@ -1,0 +1,15 @@
+t = int(input())
+for t_itr in range(t):
+    bw = input().split()
+    B = int(bw[0])
+    W = int(bw[1])
+    bcWcz = input().split()
+    X = int(bcWcz[0])
+    Y = int(bcWcz[1])
+    Z = int(bcWcz[2])
+    if (Z >= abs(X-Y)): 
+        print(B*X + W*Y)
+    elif (X <= Y):
+        print( (B+W)*X + W*Z )
+    else:
+        print((B+W)*Y + B*Z)

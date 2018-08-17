@@ -1,0 +1,11 @@
+n = int(input().strip())
+squares = list(map(int, input().strip().split(' ')))
+d,m = input().strip().split(' ')
+d,m = [int(d),int(m)]
+
+c = 0
+for i in range(n - m + 1):
+    if sum(squares[i:i+m]) == d:
+        c += 1
+        
+print(c)

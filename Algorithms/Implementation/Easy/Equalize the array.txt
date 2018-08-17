@@ -1,0 +1,7 @@
+n = int(input())
+A = list(map(int, input().split()))
+
+print ( n - max( [ A.count(t)  for t  in set(A) ]) )
+# all the elements that are same will have the highest count
+# in the set that is made using set(list_name) 
+# if we subtract from that number we will get the solution

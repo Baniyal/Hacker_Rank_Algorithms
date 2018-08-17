@@ -1,0 +1,1 @@
+http://www.8bitavenue.com/2012/01/introduction-to-loop-invariants/

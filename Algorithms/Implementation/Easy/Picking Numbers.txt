@@ -1,0 +1,12 @@
+def pickingNumbers(a):
+    return max(a.count(x)+a.count(x+1) for x in set(a))
+
+
+ets are unordered, as you say. Even though one way to implement sets is using a tree, they can also be implemented using a hash table (meaning getting the keys in sorted order may not be that trivial).
+
+If you'd like to sort them, you can simply perform:
+
+sorted(set(y))
+which will produce a sorted list containing the set's elements. (Not a set. Again, sets are unordered.)
+
+Otherwise, the only thing guaranteed by set is that it makes the elements unique (nothing will be there more than once).

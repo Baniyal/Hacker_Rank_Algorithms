@@ -1,0 +1,24 @@
+t = int(input())
+while t:
+    t -= 1
+    c = int(input())
+    l = int(input())
+    prices = [int(x) for x in input().split()]
+    found = False
+#conditional check
+    for i in range(l):
+#for all the elements in the list Check one by one na
+        for j in range(i + 1, l):
+#for each element since they cannot buy the same ice cream
+#the range will not include the same cost twice
+
+            if prices[i] + prices[j] == c:
+#check if sum of two prices are equal to their budget
+                found = True
+#break out of the first instance they satisfy the condition they get 
+#out of the loops keeping value of i and j intact
+                break
+        if found:
+            break
+
+    print("{0} {1}".format(i + 1, j + 1))

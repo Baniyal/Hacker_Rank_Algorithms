@@ -1,0 +1,18 @@
+n = int(input())
+
+maplist = []
+for i in range(n):
+    maplist.append(list(input()))
+
+for i in range(1, n-1):
+    for j in range(1, n-1):
+        c = maplist[i][j]
+        t = maplist[i-1][j]
+        l = maplist[i][j-1]
+        r = maplist[i][j+1]
+        b = maplist[i+1][j]
+        if c > t and c > l and c > r and c > b:
+            maplist[i][j] = 'X'
+
+for i in range(n):
+    print(''.join(maplist[i]))

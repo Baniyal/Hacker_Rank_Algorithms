@@ -1,0 +1,13 @@
+size = input()
+data = [int(x) for x in input().strip().split(' ')]
+a = [0 for i in range(100)]
+
+for i in data:
+    a[i] += 1
+    
+result = []
+for i in range(len(a)):
+    for j in range(a[i]):
+        result.append(i)
+
+print(' '.join([str(x) for x in result]))

@@ -1,0 +1,6 @@
+from datetime import datetime
+t=input()
+dt = datetime.strptime(t, '%I:%M:%S%p')
+print(dt.strftime('%H:%M:%S'))
+
+#always read beffore hand if there is a library that you can import

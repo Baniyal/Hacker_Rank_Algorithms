@@ -1,0 +1,15 @@
+Question : In this challenge, you will be given a list of letter heights in the alphabet and a string.
+ Using the letter heights given, determine the area of the rectangle highlight in  assuming all letters are  wide.
+
+#first using list comprehension make a list of size of all the characters 
+size = [int(i) for i in input().split()] 
+
+
+#then make the size of the largest word input that we got logic used
+#ord function returns the ASCII value of the current character of the word
+#if we subtract it from The ASCII value of the "a" we will get the size of that character as
+#we pass  this value as index in size array
+#now we get an array named word containing size of the various characters
+word = [size[ord(c)-ord('a')] for c in input()]
+
+print(max(word)*len(word))

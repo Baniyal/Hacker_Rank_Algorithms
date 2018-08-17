@@ -1,0 +1,19 @@
+def solve(a, b):
+    for each in range(len(a)): #loop goes on to the length of the list
+        if(a[each]>b[each]):
+            x[0] = x[0] + 1
+        if(a[each]<b[each]):
+            x[1] = x[1] + 1
+        else:
+        continue
+
+
+    a = list(map(int, input().rstrip().split()))
+    b = list(map(int, input().rstrip().split()))
+    #an array of two elements
+    x=[0,0]
+    solve(a,b)
+
+    fptr.write(' '.join(map(str, x)))
+    # .join function to add to the existing
+    # map(str,x) means applying string function to all the variables

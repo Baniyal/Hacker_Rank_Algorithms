@@ -1,0 +1,6 @@
+def camelcase(s):
+    count = 1
+    for each in s:
+        if(65<= ord(each) <= 90):
+            count += 1
+    return count

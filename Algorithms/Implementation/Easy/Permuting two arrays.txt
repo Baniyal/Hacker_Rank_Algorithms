@@ -1,0 +1,23 @@
+Here is a detailed explanation of why sorting solves this problem:
+
+We can sort array A ascending and sort array B descending, and
+ then because they are sorted we know that we are matching the 
+highest possible from B with the lowest possible from A each time 
+and if 1 of those fails then we know it is not possible.
+ The reason we know this is true is because they are inversely sorted,
+ so we have already made the optimal decision at each stage in terms of 
+the amount of absolute difference we have 'wasted/extra' thus leaving us
+ with the tightest bounding number to k for each index. Because it is the 
+tightest bound number, there is no other permutation that will pass if 1 comparison fails.
+
+
+def twoArrays(k, A, B):
+    A.sort()
+    B.sort(reverse = True)
+    for x in range(n):
+        if(A[x]+B[x] >= k):
+            continue
+        else:
+            return "NO"
+            break
+    return "YES"

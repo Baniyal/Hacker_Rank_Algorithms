@@ -1,0 +1,9 @@
+
+def getMoneySpent(keyboards, drives, s):
+        return max([sum([x,y]) for x in keyboards for y in drives if sum([x,y]) <= s]+[-1])
+
+#two for loops in list comprehension
+sum[x,y] the output of the list is an array of all the possible sum of the combination
+of the keyboard and the usb drive
+the +[-1] is if she is unable to buy
+then we calculate the maximum value from the list which is the optimal solution 

@@ -1,0 +1,18 @@
+x = input()
+y = input()
+z = list(y)
+ 
+v = 0
+#v is valleys
+lvl = 0
+# tells the current level
+for each in z:
+    if(each == 'U'):
+        lvl += 1
+    else :
+        lvl -= 1
+#if we just came UP to sea level
+    if(lvl == 0 and each == 'U'):
+        v += 1
+print(v)
+    
